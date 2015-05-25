@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toLeftOf="@+id/more2"
+    app:rv_rippleDuration="100"
+    app:rv_alpha="300"
+    app:rv_zoomScale="2.5"
+    app:rv_color="@color/colorControlHighlight"
+    android:layout_margin="5dp"
+    rv_centered="true">
+    <include layout="@layout/home_category_row_base"/>
+</com.andexert.library.RippleView>
+
+
+

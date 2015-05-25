@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="3dp"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:elevation="3dp"
+    android:gravity="center_horizontal"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="@drawable/select_back_ground"
+
+    card_view:cardCornerRadius="4dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgVideoSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:layout_weight="9" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/txtVideoItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_norm_size"
+                android:textColor="#ff717171"
+                android:text="Hoang phi hong"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/txtNumberView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_norm_size"
+                android:textColor="#ff717171"
+                android:text="Hoang phi hong"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+

@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itpro.mobileapp.mobilevod.account.AccountLoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/simple_screen_horizontal_margin"
+        android:paddingRight="@dimen/simple_screen_horizontal_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:drawableLeft="@drawable/ic_user"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:textSize="@dimen/text_norm_size"
+            android:textColor="#ff858585" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:background="@drawable/edit_text_border"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_key"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textSize="@dimen/text_norm_size"
+            android:textColor="#ff858585" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="19dp"
+            >
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@drawable/flat_button_bg_yellow"
+                android:id="@+id/btLogin"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/text_norm_size"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@drawable/flat_button_bg_blue"
+                android:id="@+id/btRegister"
+                android:textColor="@android:color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="@dimen/text_norm_size"
+                android:layout_marginLeft="10dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/dsfds"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_weight="5"
+                android:background="#ff222222"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="OR"
+                android:id="@+id/textView"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="3dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_weight="5"
+                android:background="#ff222222"></LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

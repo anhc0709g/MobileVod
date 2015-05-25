@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.itpro.mobileapp.mobilevod.account.AccountRegisterActivity"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+    </include>
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/simple_screen_horizontal_margin"
+        android:paddingRight="@dimen/simple_screen_horizontal_margin">
+        >
+
+        <!-- Some stuff -->
+
+        <com.andreabaccega.widget.FormEditText
+            whatever:testType="alpha"
+            whatever:emptyErrorString="Please enter your name"
+            whatever:testErrorString="Your name is invalid"
+            android:id="@+id/txtName"
+            android:hint="Your name"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/text_norm_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+
+            android:drawableLeft="@drawable/ic_user"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginTop="50dp" />
+        <com.andreabaccega.widget.FormEditText
+            whatever:testType="email"
+            android:hint="Your email"
+            whatever:emptyErrorString="Please enter your email"
+            whatever:testErrorString="Your email is invalid"
+            android:id="@+id/txtEmail"
+            android:textSize="@dimen/text_norm_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableLeft="@drawable/ic_email"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginTop="10dp" />
+        <EditText
+
+            android:id="@+id/txtPassword"
+            android:inputType="textPassword"
+            android:hint="Your password"
+            android:textSize="@dimen/text_norm_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableLeft="@drawable/ic_key"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginTop="10dp" />
+        <EditText
+
+            android:id="@+id/txtRePassword"
+            android:hint="Re-enter your password"
+            android:textSize="@dimen/text_norm_size"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableLeft="@drawable/ic_key"
+            android:background="@drawable/edit_text_border"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/radioButton"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/radioButton2"
+                android:checked="false" />
+
+        </LinearLayout>
+
+        <requestFocus />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/txtBirthDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/ic_calender"
+                android:background="@drawable/edit_text_border"
+                android:inputType="date"/>
+
+
+        <!--    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:onClick="selectDate" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <com.gc.materialdesign.views.CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#1E88E5"
+                materialdesign:check="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the ETL term of service and privacy policy"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Regiter"
+            android:background="@drawable/flat_button_bg_yellow"
+            android:id="@+id/btRegister"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/text_norm_size"
+
+            android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/dsfds"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_weight="5"
+                android:background="#ff222222"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="OR"
+                android:id="@+id/textView"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="3dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_weight="5"
+                android:background="#ff222222"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/aaaa">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+        <!-- Some other stuff -->
+
+    </LinearLayout>
+
+
+</LinearLayout>

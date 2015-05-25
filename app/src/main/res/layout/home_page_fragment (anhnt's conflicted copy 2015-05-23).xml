@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itpro.mobileapp.mobilevod.homePage.HomePageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_background_color"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="vertical"
+            android:focusable="true"
+            android:fitsSystemWindows="true"
+            android:background="@color/appDrawerBackground"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+*sephiroth
+https://github.com/sephiroth74/Android-Easing
+
+* castorflex
+https://github.com/castorflex/SmoothProgressBar
+
+*actionbarpulltorefresh
+https://github.com/chrisbanes/ActionBar-PullToRefresh
+
+*ViewPagerExtensions
+https://github.com/astuetz/ViewPagerExtensions
+
+*floatingactionbutton
+https://github.com/futuresimple/android-floating-action-button
